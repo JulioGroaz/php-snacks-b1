@@ -1,5 +1,7 @@
 <?php
-$array = __DIR__;
+$filePath = __DIR__ . '/array.php';
+$alunni = include $filePath;
+
 foreach ($alunni as $alunno) {
     $nome = $alunno['nome'];
     $cognome = $alunno['cognome'];
